@@ -1,48 +1,41 @@
 
-// api url
-const api_url = "https://raw.githubusercontent.com/HackersOfSweden/WelcomeToSweden/main/DB/regions.json";
-// Defining async function
-async function getapi(url) {
-    
-    // Storing response
-    const response = await fetch(url);
-    
-    // Storing data in form of JSON
-    var data = await response.json();
-    console.log(data);
-    if (response) {
-        hideloader();
+async function kontaktInfo() {
+    let url = 'https://raw.githubusercontent.com/HackersOfSweden/WelcomeToSweden/main/DB/regions.json';
+    try {
+        let res = await fetch(url);
+        return await res.json();
+    } catch (error) {
+        console.log(error);
     }
-   show(data);
 }
-// Calling that async function
-getapi(api_url);
-// Function to hide the loader
-function hideloader() {
-    document.getElementById('loading').style.display = 'none';
+async function renderUsers() {
+    let users = await kontaktInfo();
+    console.log(kontaktInfo);
+    let html = '';
+    users.Region.forEach(user => {
+        let htmlSegment = `<div class="Region">
+                            <h2>${user.Ort}</h2>
+                            <div class="email"><a href="email:${user['E-post']}">${user['E-post']}</a></div>
+                            <div class="telnr">${user.Telefon}</a></div>
+                            <div class="webb"><a href="${user.Webbadress}">${user.Webbadress}</a></div>
+                        </div>`;
+
+        html += htmlSegment;
+    });
+
+    //let container = document.querySelector('.container');
+    //container.innerHTML = html;
+const btn = document.getElementById("regioner");
+console.log(addEventListener);
+btn.addEventListener("click", Regioner);
+console.log("HALLOJ IGEN");
+
+function Regioner() {
+const container = document.querySelector('.container');
+console.log("HALLOJ i Regioner");
+console.log(container);
+container.innerHTML = html;
 }
-// Function to define innerHTML for HTML table
-function show(data) {
-    let tab = 
-        `<tr>
-        <th>NameSV</th>
-        <th>E-post</th>
-        <th>Telefon</th>
-        <th>Webbadress</th>
-        <th>Postnr</th>
-        <th>Ort</th>
-        </tr>`;
-    // Loop to access all rows 
-    for (let r of data) {
-        tab += `<tr> 
-    <td>${r.NameSV} </td>
-    <td>${r.E-post}</td>
-    <td>${r.Telefon}</td> 
-    <td>${r.Webbadress}</td> 
-    <td>${r.Postnr}</td>
-    <td>${r.Ort}</td>
-    </tr>`;
-    }
-    // Setting innerHTML as tab variable
-    document.getElementById("regioner").innerHTML = tab;
 }
+renderUsers();
+

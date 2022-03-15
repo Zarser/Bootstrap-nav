@@ -1,19 +1,36 @@
-/* function getEarnings() { */
-fetch('https://raw.githubusercontent.com/HackersOfSweden/WelcomeToSweden/main/DB/regions.json')
-.then(res => res.text())
-.then((out) =>
-   {
-      // alert("I am here"); // I can't see it if from function
-      let jsonData = JSON.parse(out);
-      for (let i = 0; i < jsonData.quarterlyEarnings.length; i++)
-       {
-          let earnings = jsonData.quarterlyEarnings[i];
-          document.getElementById("regions").innerHTML +=
-          "<tr><td>" + earnings.reportedDate + "</td>" +
-          "<td align='right'>" + earnings.reportedEPS + "</td>" +
-          "<td align='right'>" + earnings.estimatedEPS + "</td>" +
-          "<td align='right'>" + earnings.surprise + "</td></tr>";
-       };
-   })
-.catch(err => console.error(err));
-/* } */
+async function aktiviteter() {
+  let url = '';
+  try {
+      let res = await fetch(url);
+      return await res.json();
+  } catch (error) {
+      console.log(error);
+  }
+}
+async function renderUsers() {
+  let users = await aktiviteter();
+  console.log(aktiviteter);
+  let html = '';
+  users.Activities.forEach(user => {
+      let htmlSegment = `<div class="aktiviteter">
+                          <h2>${user.TitleSV}</h2>
+                          <div class="email">${user.DescriptionSV}</a></div>
+                          <div class="email">${user.DescriptionUA}</a></div>
+                          <div class="email">${user.DescriptionRU}</a></div>
+                          <div class="telnr">${user.Adress}</a></div>
+                          <div class="telnr">${user.Date}</a></div>
+                          <div class="telnr">${user.['Time from']}-${user.['Time To']}</a></div>
+                          <div class="webb"><a href="${user.['Booking link']}">${user.['Booking link']}</a></div>
+                          <div class="webb"><a href="${user.Link}">${user.Link}</a></div>
+
+                      </div>`;
+
+      html += htmlSegment;
+  });
+
+  let container = document.querySelector('.container');
+  container.innerHTML = html;
+  
+}
+
+renderUsers();

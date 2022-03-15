@@ -12,24 +12,27 @@
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
-      <a class="navbar-brand">RYDEBÄCK</a>
+      <a class="navbar-brand" href="#">RYDEBÄCK</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Bra Att Veta</a>
+            <a class="nav-link active" aria-current="page"><button type="button" class="btn btn-primary" onclick="">Bra Att Veta</button></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page"><button type="button" class="btn btn-primary" onclick="">Regioner</button></a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              KOMMUNER
+            <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <button type="button" class="btn btn-primary">KOMMUNER</button>
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item"><button type="button" class="btn bt-sm btn-primary" onclick="">Action</button></a></li>
+              <li><a class="dropdown-item"><button type="button" class="btn bt-sm btn-primary" onclick="">Action</button></a></li>
               <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><a class="dropdown-item"><button type="button" class="btn bt-sm btn-primary" onclick="">Action</button></a></li>
             </ul>
           </li>
         </ul>
@@ -38,10 +41,8 @@
   </nav>
 <div class="container">
   <img src="Ellipse 1.png" alt="Rydebäcks Gård" class="right">
-  <div id="loading">Laddar..</div>
-  <table id="regioner"></table>
 </div>
 <a href="/chat/public/index.html"><img src="/chat-dots.svg" alt="chatt" class="chat"></a>
-<script src="main1.js"></script>
+<script src="main.js"></script>
 </body>
 </html>
