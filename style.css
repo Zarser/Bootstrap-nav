@@ -1,0 +1,19 @@
+
+.container > img{
+    width: 35%;
+    height: 35%;
+    float: right;
+    padding: 35px 0 0 0;
+}
+.chat{
+    width: 8%;
+    height: 8%;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    padding: 0 0 15px 0;
+    color: #337ab7;
+}
+.chat:hover{
+    transform: scale(0.8);
+}
