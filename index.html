@@ -16,42 +16,86 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-      <a class="navbar-brand justify-content-end">Välkommen till Sverige</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-    </div>
+  <nav class="navbar navbar-dark bg-dark justify-content-center">
+    <ul class="nav">
+      <li class="nav-item">
+        <a class="nav-link disabled mb-0 h4">Välkommen till Sverige / ласкаво просимо до Швеції / добро пожаловать в
+          Швецию</a>
+      </li>
+    </ul>
   </nav>
+  <nav class="navbar navbar-light bg-light justify-content-center">
+  <ul class="nav">
+    <li class="nav-item">
+      <a class="nav-link" href="#aktiviteter"><button type="button" class="btn btn-sm btn-secondary">Händelser</button></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#gtk"><button type="button" class="btn btn-sm btn-secondary">Bra Att Veta</button></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#tl"><button type="button" class="btn btn-sm btn-secondary">Översättare</button></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#kontakta"><button type="button" class="btn btn-sm btn-secondary">Kontakta Oss</button></a>
+    </li>
+  </ul>
+</nav>
   <div class="container-fluid">
-  <div class="container">
-  <img src="img/sweden.png" class="img-fluid max-width: 100%; height: 200px;" alt="Responsive image">
-  <div class="container-k">
-    <h2>Regioner/Kommuner</h2>
-    <div class="row">
-      <div class="col">
-        <div class="kontakt"></div>
-      </div>
-      <div class="col">
-        <div class="kommun"></div>
-      </div>
-    </div>
-    </div>
-  </div>
-  <div class="container">
-    <div class="row">
-      <h2>Vad är nytt</h2>
-      <hr>
-      <div class="col">
-        <div class="aktiviteter-m"></div>
-      </div>
-    </div>
-  </div>
     <div class="container">
+      <p class="text-left">
+      Om du flyttar till Sverige och planerar att stanna i minst ett år ska du folkbokföra dig i Sverige. Du kan folkbokföra dig i Sverige genom att besöka Skatteverket i kommunen du flyttar till. Ta med dig pass, civilståndsintyg och födelsebevis för eventuella barn.
+När du blir folkbokförd i Sverige får du ett svenskt personnummer. Det svenska personnumret ersätter inte personnumret från ditt hemland.
+I vissa länder ska du också anmäla flytt till folkbokföringsregistret i landet du flyttar från.
+Nordiska medborgare behöver inte uppehållsrätt eller uppehållstillstånd för att bli folkbokförda i Sverige.
+Medborgare i EU/EES måste antingen ha egen uppehållsrätt eller uppehållsrätt som familjemedlem för att bli folkbokförd i Sverige.
+Medborgare i länder utanför EU/EES måste ha uppehållstillstånd i Sverige och det måste vara troligt att de ska bo i Sverige i minst ett år för att bli folkbokförd i Sverige.
+</p>
+    </div>
+    <div class="container">
+      <img src="img/sweden.png" class="img-fluid max-width: 100%; height: 200px;" alt="Responsive image">
+      <div class="container-k">
+        <h2>Regioner/Kommuner</h2>
+        <div class="row">
+          <div class="col">
+            <div class="kontakt"></div>
+          </div>
+          <div class="col">
+            <div class="kommun"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container" id="aktiviteter">
+      <div class="row">
+        <h2>Kommande Aktiviteter</h2>
+        <p class="text-left">
+          Här kan man finna aktiviteter och händelser som kommer. Det finns adress, tid och datum.
+          <br>
+          <strong>OBS! Kan vara så att man måste boka in sig för att få en plats.
+            Detta gör du via länken som då finns med.</strong>
+        </p>
+        <hr>
+        <div class="col">
+          <div class="aktiviteter-m"></div>
+        </div>
+      </div>
+    </div>
+    <div class="container" id="gtk">
       <h2>Bra att veta</h2>
+      <p class="text-left">
+        Hur söker man asyl?
+        För alla som kommer till Sverige och som vill få sin asylrätt prövad så gäller det att lämna in sin ansökan om
+        asyl. Detta gör man hos gränspolisen på direkten när man anländer till Sverige. En asylansökan kan också lämnas
+        in eller på en av alla ansökningsenheter hos det svenska migrationsverket.
+        Det svenska migrationsverket kan idag tyvärr inte godkänna en ansökan om asyl som lämnas in hos en svensk
+        ambassad utomlands. För alla som är i behov av skydd men som inte kan ta sig hela vägen till Sverige har också
+        möjlighet att vända sig direkt till UNHCR. Det är sedan Dublinförordningen som kommer att avgöra var inom EU som
+        din ansökan ska prövas.
+        Om det under en utredning av asyl framkommer att du har begått krigsbrott, brott mot mänskligheten eller om du
+        utgör ett hot mot rikets säkerhet, så kan du inte få asyl i Sverige. Skulle något av detta vara fallet så kan du
+        ändå få ett tidsbegränsat uppehållstillstånd. Detta gäller om du inte kan återvända till ditt hemland med risk
+        att förföljas, utsättas för tortyr eller dödas.
+      </p>
       <hr>
       <div class="row">
         <div class="col">
@@ -59,24 +103,79 @@
         </div>
       </div>
     </div>
-    <div class="container">
+    <div class="container" id="tl">
       <div class="row">
         <h2>Lokala Översättare</h2>
+        <p class="text-left">
+          Om man behöver hjälp med översättning så listas dem aktiva översättarna här.
+          Allt kontakt information finns med.
+        </p>
         <hr>
         <div class="col">
           <div class="locals"></div>
         </div>
+        <div class="col">
+          <img src="img/uswe.png" class="img-fluid max-width: 100%;" alt="Responsive image">
+        </div>
       </div>
     </div>
+    <div class="container" id="kontakta">
+      <section class="mb-4">
+        <h2 class="h1-responsive font-weight-bold text-center my-4">Kontakta Oss</h2>
+        <p class="text-center w-responsive mx-auto mb-5">Har du en fråga eller tycker de saknas information, så hör gärna av dig!</p>
+        <div class="row">
+            <div class="col-md-9 mb-md-0 mb-5">
+                <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="md-form mb-0">
+                              <label for="name" class="">Ditt Namn</label>
+                                <input type="text" id="name" name="name" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="md-form mb-0">
+                              <label for="email" class="">Din Mejl</label>
+                                <input type="text" id="email" name="email" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="md-form mb-0">
+                              <label for="subject" class="">Ämne</label>
+                                <input type="text" id="subject" name="subject" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="md-form">
+                              <label for="message">Ditt Meddelande</label>
+                                <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div class="text-center text-md-left">
+                    <!--<a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Skicka</a>  fungerar ej nu-->
+                </div>
+                <div class="status"></div>
+            </div>
+        </div>
+    </section>
+    </div>
   </div>
-    <!--<div class="img">
-  <img src="/img/Ellipse 1.png" alt="Rydebäcks Gård" class="right">
-</div>-->
-    <script src="main-a.js"></script>
-    <script src="main-r.js"></script>
-    <script src="main-k.js"></script>
-    <script src="main-gtk.js"></script>
-    <script src="main-l.js"></script>
+  <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+    <ion-icon name="arrow-up-outline"></ion-icon>
+  </button>
+  <script src="main-a.js"></script>
+  <script src="main-r.js"></script>
+  <script src="main-k.js"></script>
+  <script src="main-gtk.js"></script>
+  <script src="main-l.js"></script>
+  <script src="topbtn.js"></script>
+  <script src="mail.js"></script>
 </body>
 
 </html>
