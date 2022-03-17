@@ -42,11 +42,11 @@ async function aktiviteter() {
     users.Activities.forEach(user => {
         let htmlSegment = `<br><div class="aktiviteter">
                             <h2>${user.TitleSV}</h2>
-                            <br><div class="desSV"><img src="/img/se.svg" class="svg"></div>
+                            <br><div class="desSV"><img src="img/se.svg" class="svg"></div>
                             <div class="desSV">${user.DescriptionSV}</a></div>
-                            <br><div class="desSV"><img src="/img/ua.svg" class="svg"></div>
+                            <br><div class="desSV"><img src="img/ua.svg" class="svg"></div>
                             <div class="desUA">${user.DescriptionUA}</a></div>
-                            <br><div class="desSV"><img src="/img/ru.svg" class="svg"></div>
+                            <br><div class="desSV"><img src="img/ru.svg" class="svg"></div>
                             <div class="desRU">${user.DescriptionRU}</a></div>
                             <br><div class="adress"><ion-icon name="navigate-outline"></ion-icon> ${user.Adress}</a></div>
                             <div class="date"><ion-icon name="calendar-outline"></ion-icon> ${user.Date}</a></div>
