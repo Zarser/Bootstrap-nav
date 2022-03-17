@@ -1,18 +1,27 @@
 .navbar-brand{
     font-weight: 700;
 }
+.container-fluid{
+    background-color: rgba(230, 230, 230, 0.788);
+}
 .container{
     width:100%;
     width: 1200px;
     height: 100%;
     max-height: 1000px;
     padding: 30px 0 0 0;
+    margin: 30px;
+    background-color: rgb(255, 255, 255);
+    border: 4px solid #000;
+    border-radius: 10px;
 }
 .container-k{
-    width: 600px;
-    height: 200px;
+    width: 700px;
+    height: 600px;
     float: right;
     padding: 0 25px 0 0;
+    border: 4px solid #000;
+    border-radius: 10px;
 }
 .container-l{
     width: 400px;
