@@ -27,20 +27,28 @@
   <nav class="navbar navbar-light bg-light justify-content-center">
   <ul class="nav">
     <li class="nav-item">
-      <a class="nav-link" href="#aktiviteter"><button type="button" class="btn btn-sm btn-secondary">Händelser</button></a>
+      <a class="nav-link" href="#col"><button type="button" class="btn btn-primary">Händelser</button></a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#gtk"><button type="button" class="btn btn-sm btn-secondary">Bra Att Veta</button></a>
+      <a class="nav-link" href="#col"><button type="button" class="btn btn-primary">Bra Att Veta</button></a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#tl"><button type="button" class="btn btn-sm btn-secondary">Översättare</button></a>
+      <a class="nav-link" href="#tl"><button type="button" class="btn btn-primary">Tolk</button></a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#kontakta"><button type="button" class="btn btn-sm btn-secondary">Kontakta Oss</button></a>
+      <a class="nav-link" href="#kontakta"><button type="button" class="btn btn-primary">Kontakta Oss</button></a>
     </li>
   </ul>
 </nav>
   <div class="container-fluid">
+    <div class="row">
+      <div class="col">
+        <a href="https://www.tripadvisor.com/Attractions-g189806-Activities-zft11306-Sweden.html"><img src="img/act.jpg" class="img-thumbnail" alt="..." id="img-thumbnail"></a>
+      </div>
+      <div class="col">
+        <a href="https://visitsweden.com/"><img src="img/visitsweden.jpg" class="img-thumbnail" alt="..." id="img-thumbnail"></a>
+      </div>
+    </div>
     <div class="container">
       <p class="text-left">
       Om du flyttar till Sverige och planerar att stanna i minst ett år ska du folkbokföra dig i Sverige. Du kan folkbokföra dig i Sverige genom att besöka Skatteverket i kommunen du flyttar till. Ta med dig pass, civilståndsintyg och födelsebevis för eventuella barn.
@@ -52,8 +60,14 @@ Medborgare i länder utanför EU/EES måste ha uppehållstillstånd i Sverige oc
 </p>
     </div>
     <div class="container">
-      <img src="img/sweden.png" class="img-fluid max-width: 100%; height: 200px;" alt="Responsive image">
+      <img src="img/sweden.png" class="img-fluid max-width: 100%; height: 200px;" alt="Responsive image" id="c-img">
       <div class="container-k">
+        <!--<div class="card border-secondary mb-3 float-right" style="max-width: 20rem;">
+          <div class="card-header">Regioner</div>
+          <div class="card-body">
+            <p class="card-text"></p>
+          </div>
+        </div>-->
         <h2>Regioner/Kommuner</h2>
         <div class="row">
           <div class="col">
@@ -62,12 +76,59 @@ Medborgare i länder utanför EU/EES måste ha uppehållstillstånd i Sverige oc
           <div class="col">
             <div class="kommun"></div>
           </div>
-        </div>
+        </div> 
       </div>
     </div>
-    <div class="container" id="aktiviteter">
-      <div class="row">
-        <h2>Kommande Aktiviteter</h2>
+
+    <div class="container" id="container">
+      <!-- <div class="row">
+        <h2>Kommande Händelser</h2>
+        <p class="text-left">
+          Här kan man finna aktiviteter och händelser som kommer. Det finns adress, tid och datum.
+          <br>
+          <strong>OBS! Kan vara så att man måste boka in sig för att få en plats.
+            Detta gör du via länken som då finns med.</strong>
+        </p>
+        <hr>
+        <div class="col">
+          <div class="aktiviteter-m"></div>
+        </div>
+        <div class="col">
+          <div class="gtk"></div>
+        </div>
+      </div>
+    </div> -->
+    <div class="row">
+      <div class="col" id="col">
+    <div class="card border-secondary mb-3" style="max-width: 35rem;">
+      <div class="card-header"><h2>Kommande Händelser</h2></div>
+      <h5 class="card-title">
+        Här kan man finna aktiviteter och händelser som kommer. Det finns adress, tid och datum.
+        <br>
+        <strong>OBS! Kan vara så att man måste boka in sig för att få en plats.
+          Detta gör du via länken som då finns med.</strong></h5>
+      <div class="card-body">
+        <p class="card-text"></p>
+      </div>
+    </div>
+    </div>
+  <div class="col" id="col">
+    <div class="card border-secondary mb-3" style="max-width: 35rem;">
+      <div class="card-header"><h2>Bra att veta</h2></div>
+      <h5 class="card-title">
+        Hur söker man asyl?
+        För alla som kommer till Sverige och som vill få sin asylrätt prövad så gäller det att lämna in sin ansökan om
+        asyl. Detta gör man hos gränspolisen på direkten när man anländer till Sverige.
+       </h5>
+      <div class="card-body">
+        <p class="card-text" id="card-text"></p>
+      </div>
+    </div>
+    </div>
+  </div>
+  </div>
+     <!-- <div class="row">
+        <h2>Kommande Händelser</h2>
         <p class="text-left">
           Här kan man finna aktiviteter och händelser som kommer. Det finns adress, tid och datum.
           <br>
@@ -102,10 +163,10 @@ Medborgare i länder utanför EU/EES måste ha uppehållstillstånd i Sverige oc
           <div class="gtk"></div>
         </div>
       </div>
-    </div>
+    </div> -->
     <div class="container" id="tl">
       <div class="row">
-        <h2>Lokala Översättare</h2>
+        <h2>Lokala Tolkar</h2>
         <p class="text-left">
           Om man behöver hjälp med översättning så listas dem aktiva översättarna här.
           Allt kontakt information finns med.
@@ -176,6 +237,7 @@ Medborgare i länder utanför EU/EES måste ha uppehållstillstånd i Sverige oc
   <script src="main-l.js"></script>
   <script src="topbtn.js"></script>
   <script src="mail.js"></script>
+  <!-- <script src="main-r-title.js"></script> -->
 </body>
 
 </html>

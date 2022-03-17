@@ -58,7 +58,7 @@ async function aktiviteter() {
         html += htmlSegment;
     });
   
-    let container = document.querySelector('.aktiviteter-m');
+    let container = document.querySelector('.card-text');
     container.innerHTML = html;
     
   }

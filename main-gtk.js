@@ -26,7 +26,7 @@ async function GoodToKnow() {
         html += htmlSegment;
     });
   
-    let container = document.querySelector('.gtk');
+    let container = document.querySelector('#card-text');
     container.innerHTML = html;
     
   }
