@@ -11,8 +11,12 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
   </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -62,42 +66,15 @@ Medborgare i länder utanför EU/EES måste ha uppehållstillstånd i Sverige oc
     <div class="container">
       <img src="img/sweden.png" class="img-fluid max-width: 100%; height: 200px;" alt="Responsive image" id="c-img">
       <div class="container-k">
-        <!--<div class="card border-secondary mb-3 float-right" style="max-width: 20rem;">
+        <div class="card border-secondary mb-3 float-right" style="max-width: 20rem;">
           <div class="card-header">Regioner</div>
           <div class="card-body">
             <p class="card-text"></p>
           </div>
-        </div>-->
-        <h2>Regioner/Kommuner</h2>
-        <div class="row">
-          <div class="col">
-            <div class="kontakt"></div>
-          </div>
-          <div class="col">
-            <div class="kommun"></div>
-          </div>
-        </div> 
-      </div>
+        </div>
+        </div>
     </div>
-
     <div class="container" id="container">
-      <!-- <div class="row">
-        <h2>Kommande Händelser</h2>
-        <p class="text-left">
-          Här kan man finna aktiviteter och händelser som kommer. Det finns adress, tid och datum.
-          <br>
-          <strong>OBS! Kan vara så att man måste boka in sig för att få en plats.
-            Detta gör du via länken som då finns med.</strong>
-        </p>
-        <hr>
-        <div class="col">
-          <div class="aktiviteter-m"></div>
-        </div>
-        <div class="col">
-          <div class="gtk"></div>
-        </div>
-      </div>
-    </div> -->
     <div class="row">
       <div class="col" id="col">
     <div class="card border-secondary mb-3" style="max-width: 35rem;">
@@ -108,7 +85,7 @@ Medborgare i länder utanför EU/EES måste ha uppehållstillstånd i Sverige oc
         <strong>OBS! Kan vara så att man måste boka in sig för att få en plats.
           Detta gör du via länken som då finns med.</strong></h5>
       <div class="card-body">
-        <p class="card-text"></p>
+        <p class="card-text" id="card-text1"></p>
       </div>
     </div>
     </div>
@@ -127,43 +104,6 @@ Medborgare i länder utanför EU/EES måste ha uppehållstillstånd i Sverige oc
     </div>
   </div>
   </div>
-     <!-- <div class="row">
-        <h2>Kommande Händelser</h2>
-        <p class="text-left">
-          Här kan man finna aktiviteter och händelser som kommer. Det finns adress, tid och datum.
-          <br>
-          <strong>OBS! Kan vara så att man måste boka in sig för att få en plats.
-            Detta gör du via länken som då finns med.</strong>
-        </p>
-        <hr>
-        <div class="col">
-          <div class="aktiviteter-m"></div>
-        </div>
-      </div>
-    </div>
-    <div class="container" id="gtk">
-      <h2>Bra att veta</h2>
-      <p class="text-left">
-        Hur söker man asyl?
-        För alla som kommer till Sverige och som vill få sin asylrätt prövad så gäller det att lämna in sin ansökan om
-        asyl. Detta gör man hos gränspolisen på direkten när man anländer till Sverige. En asylansökan kan också lämnas
-        in eller på en av alla ansökningsenheter hos det svenska migrationsverket.
-        Det svenska migrationsverket kan idag tyvärr inte godkänna en ansökan om asyl som lämnas in hos en svensk
-        ambassad utomlands. För alla som är i behov av skydd men som inte kan ta sig hela vägen till Sverige har också
-        möjlighet att vända sig direkt till UNHCR. Det är sedan Dublinförordningen som kommer att avgöra var inom EU som
-        din ansökan ska prövas.
-        Om det under en utredning av asyl framkommer att du har begått krigsbrott, brott mot mänskligheten eller om du
-        utgör ett hot mot rikets säkerhet, så kan du inte få asyl i Sverige. Skulle något av detta vara fallet så kan du
-        ändå få ett tidsbegränsat uppehållstillstånd. Detta gäller om du inte kan återvända till ditt hemland med risk
-        att förföljas, utsättas för tortyr eller dödas.
-      </p>
-      <hr>
-      <div class="row">
-        <div class="col">
-          <div class="gtk"></div>
-        </div>
-      </div>
-    </div> -->
     <div class="container" id="tl">
       <div class="row">
         <h2>Lokala Tolkar</h2>
@@ -230,14 +170,9 @@ Medborgare i länder utanför EU/EES måste ha uppehållstillstånd i Sverige oc
   <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
     <ion-icon name="arrow-up-outline"></ion-icon>
   </button>
-  <script src="main-a.js"></script>
-  <script src="main-r.js"></script>
-  <script src="main-k.js"></script>
-  <script src="main-gtk.js"></script>
-  <script src="main-l.js"></script>
+  <script src="main.js"></script>
   <script src="topbtn.js"></script>
   <script src="mail.js"></script>
-  <!-- <script src="main-r-title.js"></script> -->
 </body>
 
 </html>

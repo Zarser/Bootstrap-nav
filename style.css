@@ -75,3 +75,6 @@ div.card-body{
     height: 100%;
     overflow: auto;
 }
+ul > li {
+    list-style: none;
+}
